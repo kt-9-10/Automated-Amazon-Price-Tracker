@@ -22,7 +22,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 price_str = soup.find(name="span", class_="a-price-whole").get_text()
 price_int = int(price_str.replace(",", ""))
 
-price_base = 59800
+price_base = 54000
 # 安値判定
 if price_int <= price_base:
 
